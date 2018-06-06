@@ -46,7 +46,8 @@ function myFunction() {
 	} else {
 		for(var i=0; i<186; i++)
 		{
-			if(document.getElementById("input").value == grille[i][0].substr(0,document.getElementById("input").value.length))
+			if((document.getElementById("input").value == grille[i][0].substr(0,document.getElementById("input").value.length))
+				 || ("to ".concat(document.getElementById("input").value) == grille[i][0].substr(0,document.getElementById("input").value.length+3)))
 			{
 				str += "<tr>";
 			    str += "<td class='gauche'>"
@@ -437,9 +438,9 @@ grille[123][0]="the accounts";
 grille[123][1]="la comptabilité";
 
 grille[124][0]="tip";
-grille[124][1]="un tuyau (idée)              ";
+grille[124][1]="un tuyau (idée)";
 
-grille[125][0]="tip  ";
+grille[125][0]="tip";
 grille[125][1]="information";
 
 grille[126][0]="to accommodate";
