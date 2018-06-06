@@ -46,8 +46,8 @@ function myFunction() {
 	} else {
 		for(var i=0; i<186; i++)
 		{
-			if((document.getElementById("input").value == grille[i][0].substr(0,document.getElementById("input").value.length))
-				 || ("to ".concat(document.getElementById("input").value) == grille[i][0].substr(0,document.getElementById("input").value.length+3)))
+			if((document.getElementById("input").value.toUpperCase() == grille[i][0].substr(0,document.getElementById("input").value.length).toUpperCase())
+				 || ("to ".concat(document.getElementById("input").value).toUpperCase() == grille[i][0].substr(0,document.getElementById("input").value.length+3).toUpperCase()))
 			{
 				str += "<tr>";
 			    str += "<td class='gauche'>"
